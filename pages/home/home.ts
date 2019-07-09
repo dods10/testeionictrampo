@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import axios from 'axios';
+
 
 @Component({
   selector: 'page-home',
@@ -23,10 +23,7 @@ outracoisa(e){
 
   };
 
-  axios.post('/save', { firstName: 'Marlon', lastName: 'Bernardes' })
-  .then(function(response){
-    console.log('salvo com sucesso')
-  });  
+   
 }
 
 teste(e){

@@ -9,6 +9,11 @@ import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 import { PaginaMinha } from '../pages/teste/teste';
 
+import { VgCoreModule } from 'videogular2/core';
+import { VgControlsModule } from 'videogular2/controls';
+import { VgOverlayPlayModule } from 'videogular2/overlay-play';
+import { VgBufferingModule } from 'videogular2/buffering';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -19,6 +24,10 @@ import { PaginaMinha } from '../pages/teste/teste';
   ],
   imports: [
     BrowserModule,
+    VgCoreModule,
+    VgControlsModule,
+    VgOverlayPlayModule,
+    VgBufferingModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
