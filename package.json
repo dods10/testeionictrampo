@@ -17,6 +17,7 @@
     "rxjs": "5.4.0",
     "typescript": "2.3.4",
     "videogular2": "6.0.0",
-    "zone.js": "0.8.12"
+    "zone.js": "0.8.12",
+    "hls.js": "0.12.4",
   }
 }
