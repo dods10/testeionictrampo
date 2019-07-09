@@ -10,7 +10,7 @@ import { NavController } from 'ionic-angular';
 export class HomePage {
    
   public valor:string;
-
+  public urlVideo:string="";
 
 
   constructor(public navCtrl: NavController) {
@@ -20,13 +20,10 @@ export class HomePage {
   }
 
 outracoisa(e){
-  this.valor = "outro zeh dagua!";
 
-  var parametros = {
+  this.urlVideo = this.valor;
 
-  };
-
-   
+  return;
 }
 
 teste(e){
