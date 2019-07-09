@@ -23,7 +23,7 @@ outracoisa(e){
 
   this.urlVideo = this.valor;
 
-  return;
+ 
 }
 
 teste(e){
