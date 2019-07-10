@@ -22,15 +22,15 @@ export class HomePage {
 outracoisa(e){
 
   this.urlVideo = this.valor;
+  this.urlVideo = "'https://d2zihajmogu5jn.cloudfront.net/bipbop-advanced/bipbop_16x9_variant.m3u8'";
 
- 
+ // document.getElementById("tela").innerHTML='<vg-player><video autoplay id="video2" [vgHls]="'+ this.urlVideo +'" id="singleVideo" controls crossorigin> </video> </vg-player><script>var video = document.getElementById("video");var hls = new Hls()hls.attachMedia(video);</script>';
 }
 
 teste(e){
   alert('dfdfdfd');
-  
-  this.criarConta();
-  this.retornavalor();
+
+
 
 }
 criarConta(){
@@ -57,8 +57,6 @@ alert(e.message);
  
 
 
-retornavalor(){
-  this.valor= "YEAHHH";
-}
+
 
 }

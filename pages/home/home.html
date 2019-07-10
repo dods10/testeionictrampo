@@ -19,6 +19,10 @@
     <ion-input class="aaa"  type="email"  value={{valor}} ></ion-input>
 </ion-item>
 
+<ion-item>
+  <div id="tela">Vai ter que aparecer um vdeo aqui</div>
+</ion-item>
+
 
   <ion-item-divider></ion-item-divider>
 
@@ -98,16 +102,19 @@
     <h2>Item</h2>
     <p>Item Paragraph</p>
 
+<video-js id=vid1 width=600 height=300 class="vjs-default-skin" controls>
+  <source
+     src="https://d2zihajmogu5jn.cloudfront.net/bipbop-advanced/bipbop_16x9_variant.m3u8"
+     type="application/x-mpegURL">
+</video-js>
+<script>
+var player = videojs('vid1');
+player.play();
+</script>
+
 
 <!--<vg-player>
-        <video [vgMedia]="media" #media id="singleVideo" preload="auto" controls>
-       <source
-     src="http://load.kudaplay.tv/aovivo/SD_BIS/video.m3u8?token=c152d6e3d136cc8f87dcb2c6e33be228"
-     type="application/x-mpegURL">
-        </video>
-</vg-player>-->
-<vg-player>
-    <video autoplay 
+    <video autoplay  id="video"
            [vgHls]="urlVideo"
             id="singleVideo"
            controls
@@ -117,16 +124,9 @@
 </vg-player>
 <script>
     var video = document.getElementById('video');
-    if (Hls.isSupported()) {
-      var hls = new Hls();
-      // bind them together
-      hls.attachMedia(video);
-      // MEDIA_ATTACHED event is fired by hls object once MediaSource is ready
-      hls.on(Hls.Events.MEDIA_ATTACHED, function () {
-		    console.log("video and hls.js are now bound together !");
-      });
-    }
-  </script>
+    var hls = new Hls();
+    hls.attachMedia(video);
+  </script>-->
 
   </ion-item>
 
